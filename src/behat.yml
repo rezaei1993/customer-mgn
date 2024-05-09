@@ -1,0 +1,8 @@
+default:
+  autoload: [ tests/Feature/Functional/bootstrap]
+  suites:
+    functional:
+      paths: [ tests/Feature/functional ]
+      contexts:
+        - FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
